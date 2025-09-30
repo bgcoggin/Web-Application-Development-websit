@@ -1,30 +1,49 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Casita Sedona</title>
 <meta charset="utf-8">
 <style>
-* { box-sizing: border-box; }
+* { 
+  box-sizing: border-box; 
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
 }
 
+#wrapper {
+  display: grid;
+  grid-template-columns: 150px 1fr 30%;
+  grid-template-rows: 100px auto 50px;
+  grid-template-areas: 
+    "header header header" 
+    "nav main aside"
+    "footer footer footer";
+}
+
 header {
   grid-area: header;
-  background-image: url(header.jpg);
+  background-image: url(images/header.jpg); /* ✅ moved into images folder */
   background-size: cover;
   background-repeat: no-repeat;   
   background-color: #003C58; /* fallback */
+  display: flex;             /* ✅ centers h1 */
+  justify-content: center;   /* ✅ horizontally */
+  align-items: center;       /* ✅ vertically */
 }
-
-h2 { color: #2c2c54; }
 
 h1 {
   text-align: center;
   color: #F7F1E3;
   font-size: 300%;
   text-shadow: 10px 10px 10px #000000;
+  margin: 0;
+}
+
+h2 { 
+  color: #2c2c54; 
 }
 
 nav {
@@ -56,14 +75,9 @@ nav a:link { color: #F7F1E3; }
 nav a:visited { color: #B9EDF0; }
 nav a:hover { color: #FFFFFF; }
 
-#wrapper {
-  display: grid;
-  grid-template-columns: 150px 1fr 30%;
-  grid-template-rows: 100px auto 50px;
-  grid-template-areas: 
-    "header header header" 
-    "nav main aside"
-    "footer footer footer";
+main {
+  grid-area: main;
+  padding: 0 1em 1em;
 }
 
 aside {
@@ -71,9 +85,11 @@ aside {
   padding: 1em;
 }
 
-main {
-  grid-area: main;
-  padding: 0 1em 1em;
+aside img {
+  max-width: 100%;   /* ✅ responsive */
+  height: auto;
+  display: block;
+  margin: 0 auto 1em; /* centers image in aside */
 }
 
 footer {
@@ -115,7 +131,7 @@ footer {
   </main> 
 
   <aside>
-    <img src="scenery.jpg" alt="Owl Clover wildflowers with red rock mountain">
+    <img src="images/scenery.jpg" alt="Owl Clover wildflowers with red rock mountain">
     <h2>Guided Hikes</h2>
     <p>Casita Sedona offers a free guided hike each week for guests. Explore the Seven Sacred Pools along the Soldiers Pass Trail.</p>
   </aside>
@@ -126,3 +142,6 @@ footer {
 </div>
 </body>
 </html>
+```
+
+
