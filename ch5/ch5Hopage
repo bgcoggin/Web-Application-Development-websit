@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 5HOP</title>
+</head>
+<body>
+  <header>
+    <h1>Chapter 5</h1>
+  </header>
 
+  <main>
+    <section>
+      <h2>Wireframe</h2>
+      <ul>
+        <li><a href="https://1drv.ms/p/c/2e47158284db7915/EUf5-MGWRq5PkMJgVCcCA_UB28EJ-T5cXCzZbRgvZgekxg?e=ePH8Of" target="_blank">Wikipedia Wireframe</a></li>
+      </ul>
+    </section>
+    
+    <section>
+      <h2>Assignments</h2>
+      <ul>
+        <li><a href="https://bgcoggin.github.io/Web-Application-Development-websit/ch5/sitemap.html" target="_blank">Sitemap</a></li>
+      </ul>
+    </section>
+    
+    <p><a href="index.html">Back to Home</a></p>
+  </main>
+
+  <footer>
+    <small><i>&copy; 2025 Benjamin Coggin</i></small>
+  </footer>
+</body>
+</html>
