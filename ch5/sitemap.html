@@ -19,7 +19,27 @@
       margin-bottom: 50px;
     }
 
-    /* Main layout container */
+    
+    .box {
+      display: inline-block;
+      background-color: #ffffff;
+      border: 2px solid #003366;
+      border-radius: 10px;
+      padding: 10px 25px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #003366;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    .box:hover {
+      background-color: #003366;
+      color: #fff;
+    }
+
+    
     .sitemap {
       display: flex;
       flex-direction: column;
@@ -27,75 +47,36 @@
       position: relative;
     }
 
-    /* Home (top box) */
-    .home {
-      background-color: #e0f0ff;
-      border: 2px solid #003366;
-      border-radius: 10px;
-      padding: 10px 25px;
-      font-weight: bold;
-      margin-bottom: 40px;
-      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .home a {
-      text-decoration: none;
-      color: #003366;
-    }
-
-    .home a:hover {
-      background-color: #003366;
-      color: #fff;
-      padding: 4px 10px;
-      border-radius: 6px;
-    }
-
     
     .vertical-line {
       width: 2px;
-      height: 40px;
+      height: 50px;
       background-color: #003366;
-      margin-bottom: 10px;
+      margin: 0 auto;
+      position: relative;
     }
 
-    /
-    .horizontal-line {
-      width: 70%;
+    
+    .connector {
+      position: relative;
+      width: 480px;
       height: 2px;
       background-color: #003366;
-      margin-bottom: 30px;
+      margin: 0 auto;
+    }
+
+    
+    .children {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 480px;
+      margin-top: 0;
+      position: relative;
     }
 
    
-    .links {
-      display: flex;
-      justify-content: space-around;
-      width: 80%;
-      flex-wrap: wrap;
-    }
-
-    .links a {
-      display: inline-block;
-      background-color: #fff;
-      border: 2px solid #003366;
-      border-radius: 10px;
-      padding: 10px 20px;
-      text-decoration: none;
-      color: #003366;
-      font-weight: bold;
-      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-      transition: 0.2s;
-      position: relative;
-      margin: 10px;
-    }
-
-    .links a:hover {
-      background-color: #003366;
-      color: white;
-    }
-
-    /* Small connector above each child box */
-    .links a::before {
+    .children .box::before {
       content: "";
       position: absolute;
       top: -22px;
@@ -106,18 +87,24 @@
       background-color: #003366;
     }
 
+    .children .box {
+      position: relative;
+      margin-top: 20px;
+    }
+
     footer {
-      margin-top: 50px;
+      margin-top: 60px;
       font-size: 0.9em;
       color: #003366;
     }
 
     @media (max-width: 600px) {
-      .links {
+      .connector, .children {
+        width: 90%;
         flex-direction: column;
         align-items: center;
       }
-      .horizontal-line {
+      .children .box::before {
         display: none;
       }
     }
@@ -128,20 +115,31 @@
   <h1>Benjamin Coggin – Site Map</h1>
 
   <div class="sitemap">
-   \
-    <div class="home"><a href="https://bgcoggin.github.io/Web-Application-Development-websit/">Home</a></div>
+
+    
+    <a href="https://bgcoggin.github.io/Web-Application-Development-websit/Ch4/Ch4Exercise/coggin.html" class="box">
+      Coggin.html 
+    </a>
 
    
     <div class="vertical-line"></div>
-    <div class="horizontal-line"></div>
 
-   
-    <div class="links">
-      <a href="https://bgcoggin.github.io/Web-Application-Development-websit/Ch4/Ch4Exercise/coggin.html">Coggin.html (Ch4)</a>
-      <a href="https://bgcoggin.github.io/Web-Application-Development-websit/ch6/Ch6Exercise/mylinks.html">Mylinks.html (Ch6)</a>
-      <a href="https://bgcoggin.github.io/Web-Application-Development-websit/ch6/Ch6Exercise/myhobby.html">Myhobby.html (Ch6)</a>
-      <a href="https://bgcoggin.github.io/Web-Application-Development-websit/ch6/Ch6Exercise/mymobilelinks.html">Mymobilelinks.html (Ch6)</a>
+    
+    <div class="connector"></div>
+
+    
+    <div class="children">
+      <a href="https://bgcoggin.github.io/Web-Application-Development-websit/ch6/Ch6Exercise/mylinks.html" class="box">
+        MyLinks.html 
+      </a>
+      <a href="https://bgcoggin.github.io/Web-Application-Development-websit/ch6/Ch6Exercise/myhobby.html" class="box">
+        MyHobby.html 
+      </a>
+      <a href="https://bgcoggin.github.io/Web-Application-Development-websit/ch6/Ch6Exercise/mymobilelinks.html" class="box">
+        MyMobileLinks.html 
+      </a>
     </div>
+
   </div>
 
   <footer>
@@ -153,3 +151,5 @@
 
 </body>
 </html>
+
+
