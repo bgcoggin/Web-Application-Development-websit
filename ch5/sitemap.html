@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Map - Benjamin Coggin</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+      margin: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #15495E;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+      margin-bottom: 50px;
+    }
+
+    /* Main layout container */
+    .sitemap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    /* Home (top box) */
+    .home {
+      background-color: #e0f0ff;
+      border: 2px solid #003366;
+      border-radius: 10px;
+      padding: 10px 25px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .home a {
+      text-decoration: none;
+      color: #003366;
+    }
+
+    .home a:hover {
+      background-color: #003366;
+      color: #fff;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+
+    
+    .vertical-line {
+      width: 2px;
+      height: 40px;
+      background-color: #003366;
+      margin-bottom: 10px;
+    }
+
+    /
+    .horizontal-line {
+      width: 70%;
+      height: 2px;
+      background-color: #003366;
+      margin-bottom: 30px;
+    }
+
+   
+    .links {
+      display: flex;
+      justify-content: space-around;
+      width: 80%;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      display: inline-block;
+      background-color: #fff;
+      border: 2px solid #003366;
+      border-radius: 10px;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #003366;
+      font-weight: bold;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+      transition: 0.2s;
+      position: relative;
+      margin: 10px;
+    }
+
+    .links a:hover {
+      background-color: #003366;
+      color: white;
+    }
+
+    /* Small connector above each child box */
+    .links a::before {
+      content: "";
+      position: absolute;
+      top: -22px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 22px;
+      background-color: #003366;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #003366;
+    }
+
+    @media (max-width: 600px) {
+      .links {
+        flex-direction: column;
+        align-items: center;
+      }
+      .horizontal-line {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Benjamin Coggin – Site Map</h1>
+
+  <div class="sitemap">
+   \
+    <div class="home"><a href="https://bgcoggin.github.io/Web-Application-Development-websit/">Home</a></div>
+
+   
+    <div class="vertical-line"></div>
+    <div class="horizontal-line"></div>
+
+   
+    <div class="links">
+      <a href="https://bgcoggin.github.io/Web-Application-Development-websit/Ch4/Ch4Exercise/coggin.html">Coggin.html (Ch4)</a>
+      <a href="https://bgcoggin.github.io/Web-Application-Development-websit/ch6/Ch6Exercise/mylinks.html">Mylinks.html (Ch6)</a>
+      <a href="https://bgcoggin.github.io/Web-Application-Development-websit/ch6/Ch6Exercise/myhobby.html">Myhobby.html (Ch6)</a>
+      <a href="https://bgcoggin.github.io/Web-Application-Development-websit/ch6/Ch6Exercise/mymobilelinks.html">Mymobilelinks.html (Ch6)</a>
+    </div>
+  </div>
+
+  <footer>
+    <small>
+      <i>Copyright &copy; 2025 Benjamin Coggin</i><br>
+      <a href="mailto:bgcoggin@mail.lipscomb.edu">bgcoggin@mail.lipscomb.edu</a>
+    </small>
+  </footer>
+
+</body>
+</html>
