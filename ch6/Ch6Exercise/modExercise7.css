@@ -1,0 +1,74 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  margin: 20px;
+}
+
+
+a:link {
+  color: navy;
+  background-color: lightyellow;
+  padding: 4px;
+  border-radius: 4px;
+  text-decoration: underline;
+}
+
+
+a:visited {
+  color: gray;
+  background-color: lightblue;
+}
+
+
+a:hover {
+  color: white;
+  background-color: darkblue;
+  text-decoration: none; /* removes underline on hover */
+}
+footer {
+  background-color: #ADD8E6; 
+  color: #003366;
+  font-family: Arial, Verdana, sans-serif;
+  padding: 10px;
+  border: 10px dashed #003366;
+  text-align: center;
+}
+
+#notice {
+  padding: 10px;
+  border: 1px dashed #003366; 
+  box-sizing: border-box;
+  color: #003366; /* replaced invalid width */
+}
+
+.headline-dotted {
+  color: #2A9D8F;                         
+  display: inline-block;                   
+  padding-bottom: 6px;                     
+  border-bottom: 3px dotted #2A9D8F;       
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 4em;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.45);  
+  background-color: rgba(255,255,255,0.5);    
+  display: inline-block;                       
+  padding: 0.15em 0.35em;
+  box-sizing: border-box;
+}
+
+section {
+  width: 80%;
+  margin: 0 auto;                             
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95em;                         
+  color: #333;                              
+  background-color: #ffffff;                  
+  padding: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);    
+  box-sizing: border-box;
+}
