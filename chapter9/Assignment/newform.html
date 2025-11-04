@@ -1,82 +1,93 @@
-
-<!DOCTYPE html> 
-<html lang="en"> 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Contact Form</title>
+<title>New Form</title>
 <meta charset="utf-8">
 <style>
-fieldset { width: 320px;
-	border: 2px ridge #FF0000;
-	padding: 10px; }
-legend { font-family: Georgia, "Times New roman", serif;
-        font-family: bold;}
-label {font-family: Arial, sans-serif; }
+fieldset { 
+  width: 320px;
+  border: 2px ridge #FF0000;
+  padding: 10px;
+}
+legend { 
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: bold;
+}
+label {
+  font-family: Arial, sans-serif;
+}
 </style>
 </head>
 <body>
 
 <h1>Contact Us</h1>
-  
+
 <form action="https://webdevbasics.net/scripts/demo.php" method="post">
-<input type="hidden" name="userid" value="12345">
-<label for="username"</label>
-<input type="text" name="username" id="username" maxlength="30"><br><br>
-<label for="pword">Password:</label>
-<input type="password" name="pword" id="pword"><br><br>
 
-<p>Vote for your favorite day of the week:</p>
-<input type="radio" name="day" value="Monday"> Monday<br>
-<input type="radio" name="day" value="Tuesday"> Tuesday<br>
-<input type="radio" name="day" value="Wednesday"> Wednesday<br>
-<input type="radio" name="day" value="Thursday"> Thursday<br>
-<input type="radio" name="day" value="Friday"> Friday<br>
-<input type="radio" name="day" value="Saturday"> Saturday<br>
-<input type="radio" name="day" value="Sunday"> Sunday<br><br>
 
-<label for="social">Select your favorite social networking site:</label>
-<select name="social" id="social">
-  <option value="facebook">Facebook</option>
-  <option value="instagram">Instagram</option>
-  <option value="x">X (Twitter)</option>
-  <option value="tiktok">TikTok</option>
-  <option value="linkedin">LinkedIn</option>
-</select><br><br>
+  <input type="hidden" name="userid" value="12345">
 
-<fieldset>
-  <legend>Shipping Address</legend>
-  <label for="address1">Address Line 1:</label>
-  <input type="text" name="address1" id="address1"><br><br>
+  
+  <label for="username">Username:</label>
+  <input type="text" name="username" id="username" maxlength="30"><br><br>
 
-  <label for="address2">Address Line 2:</label>
-  <input type="text" name="address2" id="address2"><br><br>
+  <label for="pword">Password:</label>
+  <input type="password" name="pword" id="pword"><br><br>
 
-  <label for="city">City:</label>
-  <input type="text" name="city" id="city"><br><br>
+  <p>Vote for your favorite day of the week:</p>
+  <input type="radio" name="day" value="Monday"> Monday<br>
+  <input type="radio" name="day" value="Tuesday"> Tuesday<br>
+  <input type="radio" name="day" value="Wednesday"> Wednesday<br>
+  <input type="radio" name="day" value="Thursday"> Thursday<br>
+  <input type="radio" name="day" value="Friday"> Friday<br>
+  <input type="radio" name="day" value="Saturday"> Saturday<br>
+  <input type="radio" name="day" value="Sunday"> Sunday<br><br>
 
-  <label for="state">State:</label>
-  <input type="text" name="state" id="state"><br><br>
+  <label for="social">Select your favorite social networking site:</label>
+  <select name="social" id="social">
+    <option value="facebook">Facebook</option>
+    <option value="instagram">Instagram</option>
+    <option value="x">X (Twitter)</option>
+    <option value="tiktok">TikTok</option>
+    <option value="linkedin">LinkedIn</option>
+  </select><br><br>
 
-  <label for="zip">Zip:</label>
-  <input type="text" name="zip" id="zip"><br><br>
-</fieldset><br>
+  
+  <fieldset>
+    <legend>Shipping Address</legend>
+    <label for="address1">Address Line 1:</label>
+    <input type="text" name="address1" id="address1"><br><br>
 
-<fieldset><legend> Customer Information</legend>
-<label>First Name: <input type="text" name="fname" id="fname"></label><br><br>
-<label>Last Name: <input type="text" name="lname" id="lname"></label><br><br>
-<label>E-mail: <input type="text" name="email" id="email"></label><br><br>
-</fieldset>
-<label for="comments">Comments:</label><br>
-<textarea name="comments" id="comments" rows="4" cols="40"></textarea><br><br>
-<input type=" <input type="reset" value="Reset Form">" name="signup">
+    <label for="address2">Address Line 2:</label>
+    <input type="text" name="address2" id="address2"><br><br>
+
+    <label for="city">City:</label>
+    <input type="text" name="city" id="city"><br><br>
+
+    <label for="state">State:</label>
+    <input type="text" name="state" id="state"><br><br>
+
+    <label for="zip">Zip:</label>
+    <input type="text" name="zip" id="zip"><br><br>
+  </fieldset><br>
+
+
+  <input type="image" src="signup.gif" alt="Sign Up" name="signup"><br><br>
+
+  
+  <input type="submit" value="Submit Form">
+  <input type="reset" value="Reset Form">
 
 </form>
+
+<footer>
+  <small>
+    <i>Copyright &copy; 2025 Benjamin Coggin</i><br>
+    <a href="mailto:bgcoggin@mail.lipscomb.edu">bgcoggin@mail.lipscomb.edu</a>
+  </small>
+</footer>
+
 </body>
 </html>
 
-<footer>
-    <small>
-      <i>Copyright &copy; 2025 Benjamin Coggin</i><br>
-      <a href="mailto:bgcoggin@mail.lipscomb.edu">bgcoggin@mail.lipscomb.edu</a>
-    </small>
 
-  </footer>
